@@ -11,18 +11,37 @@ theme = "hugo-material-docs"
   description = "A material design theme for documentations."
   copyright = "Released under the MIT license"
 
+  # provider = "GitHub"
+  # repo_url = "https://github.com/dfang/multi-tenancy"
+
 [params.palette]
-  primary = "red"
+  primary = "purple"
   accent  = "light-green"
 
 [[menu.main]]
   name   = "Introduction"
   url    = "/introduction"
+  identifier = "introduction"
+  # parent = "introduction"
   weight = 1
-  pre    = ""
+
+[[menu.main]]
+  name   = "Resources"
+  url    = "/resources/"
+  identifier = "resources"
+  # parent = "resources"
+  weight = 10
 
 [[menu.main]]
 	name   = "With-k8s"
-	identifier = "with-k8s"
 	url    = "/with-k8s/"
+  identifier = "with-k8s"
+  # parent = "with-k8s"
 	weight = 100
+
+[[menu.main]]
+	name   = "Without-k8s"
+	url    = "/without-k8s/"
+  identifier = "without-k8s"
+  # parent = "without-k8s"
+	weight = 101

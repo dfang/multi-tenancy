@@ -3,38 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/blog/without-k8s/</loc>
+    <loc>/multi-tenancy/without-k8s/</loc>
     <lastmod>2019-09-10T16:18:51+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/resources/</loc>
+    <loc>/multi-tenancy/resources/</loc>
     <lastmod>2019-09-10T16:06:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/introduction/</loc>
+    <loc>/multi-tenancy/introduction/</loc>
     <lastmod>2019-09-10T15:40:01+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/with-k8s/</loc>
+    <loc>/multi-tenancy/with-k8s/</loc>
     <lastmod>2019-09-10T15:40:01+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/categories/</loc>
+    <loc>/multi-tenancy/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/blog/</loc>
+    <loc>/multi-tenancy/</loc>
     <lastmod>2019-09-10T16:18:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/blog/tags/</loc>
+    <loc>/multi-tenancy/tags/</loc>
     <priority>0</priority>
   </url>
   

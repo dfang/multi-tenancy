@@ -1,0 +1,28 @@
+# baseURL = "http://example.org/"
+baseurl = "http://localhost:1313/"
+languageCode = "zh-cn"
+title = "Multi-tenancy saas solutions"
+
+theme = "hugo-material-docs"
+
+[params]
+  # General information
+  author = "Digitalcraftsman"
+  description = "A material design theme for documentations."
+  copyright = "Released under the MIT license"
+
+[params.palette]
+  primary = "red"
+  accent  = "light-green"
+
+[[menu.main]]
+  name   = "Introduction"
+  url    = "/introduction"
+  weight = 1
+  pre    = ""
+
+[[menu.main]]
+	name   = "With-k8s"
+	identifier = "with-k8s"
+	url    = "/with-k8s/"
+	weight = 100

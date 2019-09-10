@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="zh-cn">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Without K8s - Multi-tenancy saas solutions</title>
+    <meta name="generator" content="Hugo 0.51" />
+
+    
+    <meta name="description" content="A material design theme for documentations.">
+    
+    <link rel="canonical" href="/blog/without-k8s/">
+    
+    <meta name="author" content="Digitalcraftsman">
+    
+
+    <meta property="og:url" content="/blog/without-k8s/">
+    <meta property="og:title" content="Multi-tenancy saas solutions">
+    
+    <meta name="apple-mobile-web-app-title" content="Multi-tenancy saas solutions">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/blog/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('/blog/fonts/icon.eot');
+        src: url('/blog/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('/blog/fonts/icon.woff')
+               format('woff'),
+             url('/blog/fonts/icon.ttf')
+               format('truetype'),
+             url('/blog/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="/blog/stylesheets/application.css">
+    <link rel="stylesheet" href="/blog/stylesheets/temporary.css">
+    <link rel="stylesheet" href="/blog/stylesheets/palettes.css">
+    <link rel="stylesheet" href="/blog/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700|Roboto&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Roboto Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="/blog/javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-purple palette-accent-light-green">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        Without K8s
+      </div>
+    </div>
+
+    
+
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="/blog/" class="project">
+    <div class="banner">
+      
+      <div class="name">
+        <strong>Multi-tenancy saas solutions </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Introduction" href="/blog/introduction">
+	
+	Introduction
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Resources" href="/blog/resources/">
+	
+	Resources
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="With-k8s" href="/blog/with-k8s/">
+	
+	With-k8s
+</a>
+
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a class="current" title="Without-k8s" href="/blog/without-k8s/">
+	
+	Without-k8s
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Without K8s </h1>
+
+			
+
+<h3 id="multi-tenancy-in-rails">Multi-Tenancy In Rails</h3>
+
+<p>原理是通过增加一个外键字段 tenant_id 或者 organization_id 来区分租户</p>
+
+<ul>
+<li><a href="https://github.com/citusdata/activerecord-multi-tenant">https://github.com/citusdata/activerecord-multi-tenant</a></li>
+<li><a href="https://www.citusdata.com/blog/2017/01/05/easily-scale-out-multi-tenant-apps/">https://www.citusdata.com/blog/2017/01/05/easily-scale-out-multi-tenant-apps/</a></li>
+<li><a href="https://www.allerin.com/blog/multi-tenancy-in-rails">https://www.allerin.com/blog/multi-tenancy-in-rails</a></li>
+<li><a href="https://github.com/influitive/apartment">GitHub - influitive/apartment: Database multi-tenancy for Rack (and Rails) applications</a></li>
+</ul>
+
+<h3 id="multi-tenancy-with-spring-boot">Multi-Tenancy with spring-boot</h3>
+
+<ul>
+<li><a href="https://speakerdeck.com/stormpath/multi-tenancy-with-spring-boot">Multi-Tenancy with Spring Boot - Speaker Deck</a></li>
+</ul>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2019 Released under the MIT license &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="/blog/resources/" title="Resources">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              Resources
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="/blog/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "¶";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

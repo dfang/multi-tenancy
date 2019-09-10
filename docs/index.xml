@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Multi-tenancy saas solutions</title>
-    <link>/multi-tenancy/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Multi-tenancy saas solutions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 10 Sep 2019 16:18:51 +0800</lastBuildDate>
     
-	<atom:link href="/multi-tenancy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Without K8s</title>
-      <link>/multi-tenancy/without-k8s/</link>
+      <link>http://localhost:1313/without-k8s/</link>
       <pubDate>Tue, 10 Sep 2019 16:18:51 +0800</pubDate>
       
-      <guid>/multi-tenancy/without-k8s/</guid>
+      <guid>http://localhost:1313/without-k8s/</guid>
       <description> Multi-Tenancy In Rails 原理是通过增加一个外键字段 tenant_id 或者 organization_id 来区分租户
  https://github.com/citusdata/activerecord-multi-tenant https://www.citusdata.com/blog/2017/01/05/easily-scale-out-multi-tenant-apps/ https://www.allerin.com/blog/multi-tenancy-in-rails GitHub - influitive/apartment: Database multi-tenancy for Rack (and Rails) applications  Multi-Tenancy with spring-boot  Multi-Tenancy with Spring Boot - Speaker Deck  </description>
     </item>
     
     <item>
       <title>Resources</title>
-      <link>/multi-tenancy/resources/</link>
+      <link>http://localhost:1313/resources/</link>
       <pubDate>Tue, 10 Sep 2019 16:06:57 +0800</pubDate>
       
-      <guid>/multi-tenancy/resources/</guid>
+      <guid>http://localhost:1313/resources/</guid>
       <description>Before roll your own multi-tenancy saas solution, learn more from other&amp;rsquo;s, there are a lots of videos, slides, talks, blogs on internet.
 Slides:
  Building Multi-Tenant Applications - Speaker Deck   solution from hasura
@@ -35,10 +35,10 @@ Slides:
     
     <item>
       <title>Introduction</title>
-      <link>/multi-tenancy/introduction/</link>
+      <link>http://localhost:1313/introduction/</link>
       <pubDate>Tue, 10 Sep 2019 15:40:01 +0800</pubDate>
       
-      <guid>/multi-tenancy/introduction/</guid>
+      <guid>http://localhost:1313/introduction/</guid>
       <description> What is multi-tenancy ? Multi-tenancy is a single instance of software that serves multiple customers privately.
 Examples of multi-tenancy apps: Slack, Salesforce, G Suite, Heroku
 Why would you use multi-tenancy ?  Cost-savings Single Deployment point Easier maintenance  Database Strategies  Solution 1: One Database per tenant Solution 2: One Schema in a db for per tenant Solution 3: Shared tables architecture(tenant_id or organization_id)  </description>
@@ -46,10 +46,10 @@ Why would you use multi-tenancy ?  Cost-savings Single Deployment point Easier m
     
     <item>
       <title>With K8s</title>
-      <link>/multi-tenancy/with-k8s/</link>
+      <link>http://localhost:1313/with-k8s/</link>
       <pubDate>Tue, 10 Sep 2019 15:40:01 +0800</pubDate>
       
-      <guid>/multi-tenancy/with-k8s/</guid>
+      <guid>http://localhost:1313/with-k8s/</guid>
       <description>Multi-tenancy with k8s  kubernetes multi-tenancy official sigs
   GitHub - kubernetes-sigs/multi-tenancy: A working place for multi-tenancy related proposals and prototypes.
  k8s multi-tenancy proposals and design docs

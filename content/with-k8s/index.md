@@ -9,6 +9,8 @@ draft: false
 
 > kubernetes multi-tenancy official sigs
 
+* [Kubernetes - Multi-Tenancy Design Scratch Space](https://docs.google.com/document/d/1PjlsBmZw6Jb3XZeVyZ0781m6PV7-nSUvQrwObkvz7jg/)
+
 * [GitHub - kubernetes-sigs/multi-tenancy: A working place for multi-tenancy related proposals and prototypes.](https://github.com/kubernetes-sigs/multi-tenancy)
 
 * [k8s multi-tenancy proposals and design docs](https://github.com/kubernetes-sigs/multi-tenancy/blob/master/docs/links.md)
